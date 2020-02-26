@@ -8,8 +8,12 @@ echo -e "${green} cloning the prototype boiler plate \e[0m"
 git clone https://github.com/Avarsa/dev_boilerplate.git $name
 
 
-echo -e "${green} creating a virtual environment for python packages \e[0m"
+echo -e "${green} pip3 is being installed \e[0m"
 sudo apt-get install python3-pip
+
+echo -e "${green} creating a virtual environment for python packages \e[0m"
+pip3 install virtualenv
+
 python3 -m virtualenv $name/venv
 echo -e "${green} switching to the virtual env \e[0m"
 source $name/venv/bin/activate
