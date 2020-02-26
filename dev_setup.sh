@@ -1,3 +1,4 @@
+#!/bin/bash
 green='\e[92m'
 
 read -p "Name of the project directory : " name
@@ -10,11 +11,15 @@ git clone https://github.com/Avarsa/dev_boilerplate.git $name
 
 echo -e "${green} creating a virtual environment for python packages \e[0m"
 sudo apt-get install python3-venv
-# mkdir $name/venv
 python3 -m venv $name/venv
 echo -e "${green} switching to the virtual env \e[0m"
 
-source $name/venv/bin/activate
+echo "source $name/venv/bin/activate" > venvs.sh
+sudo chmod +x venvs.sh
+source venvs.sh
+rm -rf venvs.sh
+
+# source $name/venv/bin/activate
 
 echo "switched"
 
