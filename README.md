@@ -1,6 +1,6 @@
 # Shell Scripts
 
-Utility Shell Scripts
+<em>Utility Shell Scripts</em>
 
 1. dev_setup.sh
     * This script sets up a [boilerplate](https://github.com/Avarsa/dev_boilerplate) flask environment and runs the development server
