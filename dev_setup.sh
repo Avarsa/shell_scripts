@@ -9,11 +9,14 @@ git clone https://github.com/Avarsa/dev_boilerplate.git $name
 
 
 echo -e "${green} creating a virtual environment for python packages \e[0m"
-sudo apt-get install python3-pip
-python3 -m virtualenv $name/venv
+sudo apt-get install python3-venv
+# mkdir $name/venv
+python3 -m venv $name/venv
 echo -e "${green} switching to the virtual env \e[0m"
+
 source $name/venv/bin/activate
 
+echo "switched"
 
 echo -e "${green} installing dependencies \e[0m"
 pip3 install -r $name/requirements.txt
