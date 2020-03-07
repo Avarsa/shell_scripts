@@ -7,4 +7,5 @@
     
     * <h5>usage</h5>
     run `source dev_setup.sh` from a unix terminal
+    (<em>This script works on Ubuntu 19.10. I did not have to check the support on other OS with different configuratios other than what I have. So, this file has not be tested on other platforms </em>)
     
